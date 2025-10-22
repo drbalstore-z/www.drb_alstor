@@ -1,0 +1,262 @@
+<!--
+  DRB Alstor - One Page Website
+  File: drb-alstor-onepage.html
+  Instructions: Save this file and upload to GitHub Pages, Netlify, or any static host.
+  - To use GitHub Pages: create a repo named <username>.github.io, add this file as index.html, push.
+  - To use Netlify: drag & drop this file into a new site on app.netlify.com.
+
+  Color theme: Professional dark (charcoal + gold)
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DRB Alstor Project Management Services Co.</title>
+  <meta name="description" content="DRB Alstor - Project management, construction supervision, cost estimation and construction consulting." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#151515; /* charcoal */
+      --panel:#1e1e1e;
+      --muted:#bdbdbd;
+      --accent:#c79b2b; /* gold */
+      --accent-2:#e0b84d;
+      --glass: rgba(255,255,255,0.02);
+      --maxw:1100px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;background:linear-gradient(180deg,var(--bg),#0f0f0f);color:#fff; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#111;font-weight:700;font-size:20px}
+    h1{margin:0;font-size:20px}
+    .tag{color:var(--muted);font-size:13px}
+
+    nav{display:flex;gap:14px}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px}
+    nav a:hover{background:var(--glass);color:var(--accent)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:24px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid rgba(255,255,255,0.04);padding:28px;border-radius:14px}
+    .eyebrow{display:inline-block;padding:6px 10px;background:rgba(199,155,43,0.12);color:var(--accent);border-radius:999px;font-weight:700;font-size:12px}
+    .lead{font-size:28px;margin:14px 0 8px}
+    .lead small{display:block;font-size:15px;color:var(--muted);font-weight:500}
+    .cta-row{display:flex;gap:12px;margin-top:16px}
+    .btn{background:var(--accent);color:#111;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    /* Contact box */
+    .contact{padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);background:linear-gradient(135deg, rgba(255,255,255,0.01), transparent)}
+    .contact h3{margin:0 0 10px}
+    .contact a{display:inline-block;color:var(--accent);text-decoration:none;font-weight:700}
+    .info{font-size:14px;color:var(--muted);margin-top:6px}
+
+    /* Sections */
+    section{margin-top:28px}
+    .card{background:var(--panel);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+
+    .service{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);border:1px solid rgba(255,255,255,0.02)}
+    .service h4{margin:0 0 8px}
+    .service p{margin:0;color:var(--muted);font-size:14px}
+
+    /* Footer */
+    footer{margin-top:36px;display:flex;justify-content:space-between;align-items:center;padding:12px;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      .grid{grid-template-columns:1fr}
+      nav{display:none}
+      .logo{width:48px;height:48px}
+      .lead{font-size:22px}
+    }
+
+    /* Utilities */
+    .muted{color:var(--muted)}
+    .center{text-align:center}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff}
+    label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">DA</div>
+        <div>
+          <h1>DRB Alstor Project Management Services Co.</h1>
+          <div class="tag">Construction · Project Management · Consulting</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="hero-card">
+          <span class="eyebrow">Professional • Trusted</span>
+          <h2 class="lead">Project management & construction supervision built for results
+            <small>Delivering projects on time, within budget, with uncompromising quality.</small>
+          </h2>
+
+          <p class="muted">DRB Alstor provides end-to-end project management and construction consulting services across residential, commercial, and infrastructure projects. We combine experienced leadership with practical planning to reduce risk and accelerate delivery.</p>
+
+          <div class="cta-row">
+            <a class="btn" href="#contact">Get a Quote</a>
+            <a class="btn ghost" href="#services">Our Services</a>
+          </div>
+
+          <div style="margin-top:18px;color:var(--muted);font-size:14px">
+            <strong>Phone:</strong> 05663174216 · <strong>Email:</strong> <a href="mailto:drbalstore@gmail.com" style="color:var(--accent);text-decoration:none">drbalstore@gmail.com</a>
+          </div>
+        </div>
+
+        <aside class="contact">
+          <h3>Contact</h3>
+          <div class="info">Reach us for project inquiries, bids, or partnership opportunities.</div>
+          <div style="margin-top:12px">
+            <div><strong>Email:</strong> <a href="mailto:drbalstore@gmail.com">drbalstore@gmail.com</a></div>
+            <div style="margin-top:6px"><strong>Phone:</strong> <a href="tel:+05663174216">05663174216</a></div>
+          </div>
+
+          <div style="margin-top:12px">
+            <a class="btn" href="mailto:drbalstore@gmail.com">Email Us</a>
+          </div>
+        </aside>
+      </div>
+
+      <!-- About -->
+      <section id="about">
+        <div class="card">
+          <h3>About DRB Alstor</h3>
+          <p class="muted">DRB Alstor Project Management Services Co. provides comprehensive project management and construction consulting for residential, commercial, and infrastructure projects. Our services include planning, procurement support, construction supervision, quality control, and post-construction handover. We partner with owners, architects, and contractors to ensure projects meet scope, schedule and budget targets.</p>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <h3 style="margin-top:18px">Services</h3>
+        <div class="grid" style="margin-top:12px">
+          <div class="service">
+            <h4>Project Management</h4>
+            <p>Comprehensive PM services including scheduling, stakeholder coordination, risk management and reporting to ensure on-time delivery.</p>
+          </div>
+
+          <div class="service">
+            <h4>Construction Supervision</h4>
+            <p>On-site supervision and quality control to ensure works comply with designs, specifications and safety standards.</p>
+          </div>
+
+          <div class="service">
+            <h4>Cost Estimation & Budgeting</h4>
+            <p>Detailed cost estimates, value engineering and budget tracking to control financial performance across the project lifecycle.</p>
+          </div>
+
+          <div class="service">
+            <h4>Procurement Support</h4>
+            <p>Assistance with tendering, contractor selection, and procurement strategies to secure the right partners and materials.</p>
+          </div>
+
+          <div class="service">
+            <h4>Design Coordination</h4>
+            <p>Coordinate between architects, engineers and contractors to align design intent with construction practicality and cost.</p>
+          </div>
+
+          <div class="service">
+            <h4>Handover & Closeout</h4>
+            <p>Post-construction inspections, snag lists, documentation and training to ensure smooth handover to owners or facility teams.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects (placeholder) -->
+      <section id="projects">
+        <h3 style="margin-top:22px">Selected Projects</h3>
+        <div style="margin-top:12px" class="card">
+          <p class="muted">(Add project photos and case studies here.)</p>
+        </div>
+      </section>
+
+      <!-- Contact form -->
+      <section id="contact">
+        <h3 style="margin-top:22px">Contact Us</h3>
+        <div class="card" style="margin-top:12px;display:grid;grid-template-columns:1fr 360px;gap:18px">
+
+          <div>
+            <form action="mailto:drbalstore@gmail.com" method="post" enctype="text/plain">
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your full name" required>
+
+              <label for="company" style="margin-top:10px">Company</label>
+              <input id="company" name="company" placeholder="Company (optional)">
+
+              <label for="message" style="margin-top:10px">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project" rows="6" required></textarea>
+
+              <div style="margin-top:12px;display:flex;gap:10px">
+                <button type="submit" class="btn">Send Message</button>
+                <button type="reset" class="btn ghost">Reset</button>
+              </div>
+            </form>
+
+            <p class="small" style="margin-top:10px">Or email us directly at <a href="mailto:drbalstore@gmail.com" style="color:var(--accent)">drbalstore@gmail.com</a></p>
+          </div>
+
+          <aside style="padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border-radius:10px;border:1px solid rgba(255,255,255,0.02)">
+            <h4>Contact Info</h4>
+            <p class="muted"><strong>Phone:</strong> 05663174216<br><strong>Email:</strong> <a href="mailto:drbalstore@gmail.com">drbalstore@gmail.com</a></p>
+
+            <h4 style="margin-top:12px">Working Hours</h4>
+            <p class="muted">Mon - Fri · 8:00 AM - 6:00 PM</p>
+
+            <h4 style="margin-top:12px">Follow</h4>
+            <p class="muted">Add links to LinkedIn, Facebook or Instagram here.</p>
+          </aside>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> DRB Alstor Project Management Services Co.</div>
+      <div class="muted">Made with care · <a href="#contact" style="color:var(--accent);text-decoration:none">Contact us</a></div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        e.preventDefault();
+        const t = document.querySelector(this.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
